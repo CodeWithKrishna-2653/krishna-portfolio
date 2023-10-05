@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="phone.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width: 960px)" href="tablet.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul class="logo">
+                    <a href="index.html">
+                        <li><samp>Port<span>folio</span></samp></li>
+                    </a>
+                </ul>
+                <div class="menu">
+                    <a href="index.html" style="--i:1;">Home</a>
+                    <a href="about.html" style="--i:2;">About Me</a>
+                    <a href="service.html" style="--i:3;">Services</a>
+                    <a href="contact.html" style="--i:4;">Contact Us</a>
+                </div>
+                <div class="register">
+                    <a href="signup.html">Sign up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact me for work/genral Enquiries</h1>
+                <form class="form" action="backend.php" method="post">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder="Enter your email">
+                        <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="phone" class="form-control" id="clientphone" placeholder="Enter your phone">
+                    </div>
+                    <div2 class="checkbox">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                    </div2>
+                    <div class="button6">
+                        <a4 href="a">
+                            <button>Submit</button>
+                        </a4>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>
+            <center id="footer"></center>
+        </span>
+    </div>
+</body>
+
+<script defer src="index.js"></script>
+
+</html>

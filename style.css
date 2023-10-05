@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap");
+
+/* css reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+}
+
+
+/* body */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body::before {
+    position: fixed;
+    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);   
+    bottom: 0px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* Navigation */
+
+nav {
+    top: 8px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    position: fixed;
+    align-items: center;
+}
+
+nav::before {
+    content: "";
+    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    height: 140%;
+    z-index: -1;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo li {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    cursor: default;
+    list-style: none;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 0;
+    animation: logo 2s ease forwards;
+    text-shadow: 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 15px #00475f;
+}
+
+.logo span {
+    color: white;
+    position: relative;
+    z-index: -1;
+    text-shadow: 0 0 5px red, 0 0 5px red, 0 0 5px red, 0 0 5px red, 0 0 15px red;
+}
+
+.menu a {
+    width: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+    animation: menu 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    text-shadow: 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 150px rgb(140, 247, 255);
+    transition: 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    width: 100%;
+    box-shadow: 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 150px rgb(140, 247, 255);
+}
+
+.register a {
+    animation: button 2s ease backwards;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #0ef;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 5px;
+    box-shadow: 4px 4px black;
+}
+
+.register a:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* index page */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40vh;
+    z-index: -1;
+    position: relative;
+}
+
+.samp {
+    color: white;
+    border: none;
+    font-size: 50px;
+    text-shadow: 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 15px rgb(240, 131, 149);
+    animation: hello 1s ease forwards;
+    opacity: 0;
+}
+
+.portfolio {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 60px;
+    list-style: none;
+    animation: zoomin 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 15px #00475f;
+}
+
+.portfolio samp {
+    color: white;
+    position: relative;
+    z-index: -1;
+    text-shadow: 0 0 5px red, 0 0 5px red, 0 0 5px red, 0 0 5px red, 0 0 15px red;
+}
+
+.register1 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #0ef;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 5px;
+    font-size: 25px;
+    box-shadow: 4px 4px black;
+    animation: menu2 1s ease forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+.register1 a:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* about page */
+
+.infocontainer {
+    width: 100vw;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+}
+
+.hello {
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+    animation: hello 1s ease forwards;
+    opacity: 0;
+}
+
+.name {
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    animation: logo 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.about {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    font-weight: bolder;
+    animation: menu 1s ease forwards;
+    opacity: 0;
+}
+
+.about .multiple-text {
+    color: #0ef;
+}
+
+.moreabout {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 9px;
+    font-weight: 500;
+    color: blanchedalmond;
+    animation: moreabout 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 10px 15px 10px 0;
+    transition: 0.5s ease;
+    animation: moreabout 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(0.1s * var(--j));
+}
+
+.social-media a:hover {
+    background-color: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+.button10 button {
+    margin: 0 3px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background-color: #0ef;
+    animation: menu2 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 4px 4px black;
+}
+
+.button10 button:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* service page */
+
+.main2 {
+    padding-top: 15vh;
+    /* background-image: linear-gradient(to bottom, #33001b, #ff0084); */
+    padding-bottom: 10vh;
+    z-index: -1;
+    position: relative;
+}
+
+.main2 .course {
+    color: #0ef;
+    text-align: center;
+    text-shadow: 0 0 15px #00475f, 0 0 15px #00475f, 0 0 15px #00475f, 0 0 15px #00475f, 0 0 115px #00475f;
+    font-size: 50px;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.vid-list {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+
+.vid-list img {
+    width: 95%;
+    border-radius: 20px;
+    animation: zoomin 1s ease forwards;
+    opacity: 0;
+}
+
+.vid-list .tittle {
+    font-size: 20px;
+    color: #0ef;
+    animation: logo 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.vid-list .visit-now {
+    margin-top: 15px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background-color: #0ef;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 4px 4px black;
+    animation: menu2 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.vid-list .visit-now:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* contact page */
+
+.contactform {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.contactform h1 {
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+}
+
+.contactform a {
+    text-decoration: none;
+}
+
+.contactform form div {
+    margin: 20px 0;
+    font-size: 25px;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div2 {
+    margin: 20px 0;
+    font-size: 25px;
+    color: blanchedalmond;
+}
+
+.contactform form div input {
+    width: 313px;
+    margin: auto;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 17px;
+    margin-top: 12px;
+    font-size: 21px;
+    transition: 0.4s;
+}
+
+.contactform form div input:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+    z-index: 10;
+}
+
+#emailHelp {
+    font-size: 15px;
+}
+
+.button6 button {
+    margin: 0 3px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background-color: #0ef;
+    color: black;
+    border-color: #0ef;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 4px 4px black;
+}
+
+.button6 button:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* signup page */
+
+.register2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 155px;
+}
+
+.register2 h1 {
+    text-align: center;
+    color: beige;
+}
+
+.register2 form {
+    font-size: 25px;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.register2 form div {
+    margin: 10px 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.register2 form div input {
+    width: 313px;
+    margin: auto;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 17px;
+    margin-top: 12px;
+    font-size: 21px;
+    transition: 0.4s;
+}
+
+.register2 form div input:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+    z-index: 10;
+}
+
+.button5 button {
+    margin: 0 3px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background-color: #0ef;
+    text-decoration: none;
+    border-color: #0ef;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button5 button:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.p .btn {
+    width: 86px;
+    margin: 0 3px;
+    padding: 9px 14px;
+    border-radius: 10px;
+    background-color: #0ef;
+    text-decoration: none;
+    border-color: #0ef;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.p .btn:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* login page */
+
+.register5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 245px;
+}
+
+.register5 h1 {
+    color: beige;
+}
+
+.register5 form {
+    font-size: 25px;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.register5 form div {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.register5 form div input {
+    width: 313px;
+    margin: auto;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 17px;
+    margin-top: 12px;
+    font-size: 21px;
+    transition: 0.4s;
+}
+
+.register5 form div input:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+    z-index: 10;
+}
+
+button2 {
+    border-radius: 10px;
+    background-color: #0ef;
+    text-decoration: none;
+    border: none;
+    color: black;
+    padding: 9px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button2:hover {
+    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
+}
+
+
+/* footer */
+
+.footer {
+    height: 5vh;
+    bottom: 0px;
+    width: 100vw;
+    opacity: .7;
+    position: fixed;
+    color: white;
+}
+
+.footer::before {
+    content: "";
+    background-color: rgb(104, 104, 104);
+    width: 100%;
+    opacity: .7;
+    height: 8vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#footer {
+    font-size: 25px;
+}
+
+
+/* KEYFRAMES ANIMATION */
+
+@keyframes logo {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes menu {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes menu2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hello {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moreabout {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,283 @@
+/* css reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation */
+
+nav {
+    font-size: 30px;
+    flex-direction: column;
+}
+
+nav::before {
+    height: 160px;
+    width: 100%;
+}
+
+.logo li {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: -13px;
+}
+
+.menu {
+    border-bottom: 2px solid #faa303;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px 0px;
+}
+
+.menu a {
+    padding: 0px 0px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.register a {
+    font-size: 11px;
+}
+
+
+/* index page */
+
+.home {
+    padding-top: 50vh;
+}
+
+.samp {
+    font-size: 30px;
+}
+
+.portfolio {
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.register1 a {
+    font-size: 15px;
+}
+
+
+/* about page */
+
+.devinfo {
+    padding: 30px;
+    padding-top: 180px;
+    padding-bottom: 0;
+}
+
+.hello {
+    font-size: 30px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.about {
+    font-size: 23px;
+}
+
+.moreabout {
+    font-size: 20px;
+}
+
+.social-media a {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.button10 button {
+    font-size: 12px;
+    margin-bottom: 45px;
+}
+
+
+/* service page */
+
+.main2 {
+    padding-top: 35vh;
+    /* background-image: linear-gradient(to top #33001b, #ff0084); */
+}
+
+.main2 .course {
+    font-size: 20px;
+}
+
+.video {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.vid-list {
+    font-size: 19px;
+}
+
+
+/* contact page */
+
+.contactform {
+    padding-top: 200px;
+}
+
+.contactform h1 {
+    font-size: 20px;
+}
+
+.contactform form div {
+    margin: 5px;
+}
+
+.contactform form div input {
+    width: 213px;
+    height: 35px;
+}
+
+.checkbox label {
+    font-size: 14px;
+}
+
+
+/* signup page */
+
+.register2 {
+    padding-top: 180px;
+}
+
+.register2 form div {
+    margin: 0px;
+}
+
+.register2 form div input {
+    width: 213px;
+    height: 35px;
+}
+
+.p {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.p p {
+    font-size: 15px;
+}
+
+.p .btn {
+    width: 70px;
+}
+
+
+/* login page */
+
+.register5 {
+    padding-top: 230px;
+}
+
+.register5 h1 {
+    font-size: 25px;
+}
+
+.register5 form div input {
+    width: 213px;
+    height: 35px;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 0;
+}
+
+.footer .samp2 {
+    margin: 0;
+}
+
+#footer {
+    padding: 0;
+    font-size: 21px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 250px) {
+    /* index page */
+    .home {
+        height: 135vh;
+    }
+    /* about page */
+    .devinfo {
+        padding-top: 160px;
+    }
+    .hello {
+        font-size: 22px;
+    }
+    .name {
+        font-size: 29px;
+    }
+    .about {
+        font-size: 23px;
+    }
+    .moreabout {
+        font-size: 13px;
+    }
+    .social-media a {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .button10 button {
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    /* service page */
+    .main2 {
+        padding-top: 50vh;
+    }
+    /* contact page */
+    .contactform {
+        padding-top: 170px;
+    }
+    .contactform h1 {
+        font-size: 12px;
+    }
+    .contactform form div input {
+        width: 200px;
+        font-size: 15px;
+    }
+    #emailHelp {
+        font-size: 9px;
+    }
+    .contactform form div2 {
+        font-size: 0px;
+    }
+    .button6 button {
+        margin-bottom: 30px;
+    }
+    /* signup page */
+    .register2 {
+        padding-top: 160px;
+    }
+    .register2 form div input {
+        width: 200px;
+        font-size: 15px;
+    }
+    .p {
+        margin-left: 0px;
+    }
+    .p .btn {
+        margin-bottom: 30px;
+    }
+    /* login page */
+    .register5 {
+        padding-top: 160px;
+    }
+    .register5 form div input {
+        width: 200px;
+        font-size: 15px;
+    }
+}

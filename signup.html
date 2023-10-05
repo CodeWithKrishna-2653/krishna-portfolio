@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="phone.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width: 960px)" href="tablet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul class="logo">
+                    <ul class="logo">
+                        <a href="index.html">
+                            <li><samp>Port<span>folio</span></samp></li>
+                        </a>
+                    </ul>
+                </ul>
+                <div class="menu">
+                    <a href="index.html" style="--i:1;">Home</a>
+                    <a href="about.html" style="--i:2;">About Me</a>
+                    <a href="service.html" style="--i:3;">Services</a>
+                    <a href="contact.html" style="--i:4;">Contact Us</a>
+                </div>
+                <div class="register">
+                    <a href="signup.html">Sign up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="register2">
+                <h1>Sign up</h1>
+                <form action="backend.php" method="post">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="name" class="form-control" id="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conform your password">
+                    </div>
+                    <div2 class="mb-3 form-check">
+                        <input type="checkbox" class="checkbox" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div2>
+                    <div class="button5">
+                        <a3 href="a">
+                            <button>Submit</button>
+                        </a3>
+                    </div>
+                    <div3 class="p">
+                        <p>I have already an account.</p>
+                        <button class="btn"><a href="login.html">Login</a></button>
+                    </div3>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>
+            <center id="footer"></center>
+        </span>
+    </div>
+</body>
+
+<script defer src="index.js"></script>
+
+</html>

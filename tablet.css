@@ -1,0 +1,154 @@
+/* Navigation */
+
+.logo li {
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.menu a {
+    padding: 10px 5px;
+    font-size: 12px;
+}
+
+.register {
+    padding-right: 15px;
+}
+
+.register a {
+    font-size: 10px;
+}
+
+
+/* index page */
+
+.home {
+    padding-top: 35vh;
+    background-image: none;
+}
+
+.samp {
+    font-size: 45px;
+}
+
+.portfolio {
+    font-size: 45px;
+}
+
+.register1 a {
+    font-size: 15px;
+}
+
+
+/* about page */
+
+.devinfo {
+    padding-top: 300px;
+    width: 100vw;
+    padding-left: 150px;
+    position: relative;
+    z-index: -1;
+}
+
+.hello {
+    font-size: 55px;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.about {
+    font-size: 55px;
+}
+
+.moreabout {
+    font-size: 20px;
+}
+
+.social-media a {
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.button10 button {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* service page */
+
+.vid-list {
+    padding: 0;
+}
+
+.main2 .course {
+    font-size: 40px;
+}
+
+.vid-list .tittle {
+    font-size: 15px;
+}
+
+.vid-list .visit-now {
+    font-size: 20px;
+}
+
+
+/* contact page */
+
+.contactform {
+    padding-top: 130px;
+}
+
+.button6 button {
+    margin-bottom: 20px;
+}
+
+
+/* signup page */
+
+.register2 {
+    padding-top: 80px;
+}
+
+.btn a {
+    margin-bottom: 20px;
+}
+
+
+/* login page */
+
+.register5 {
+    padding-top: 160px;
+}
+
+button2 {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-height: 360px) {
+    .devinfo {
+        background-image: linear-gradient(to bottom, #33001b, #ff0084);
+        padding-bottom: 20px;
+    }
+    .contactform {
+        background-image: linear-gradient(to bottom, #33001b, #ff0084);
+        padding-bottom: 20px;
+    }
+    .register2 {
+        background-image: linear-gradient(to bottom, #33001b, #ff0084);
+        padding-bottom: 40px;
+    }
+    .register5 {
+        background-image: linear-gradient(to bottom, #33001b, #ff0084);
+        padding-bottom: 50px;
+    }
+    .footer {
+        padding: 0;
+    }
+    #footer {
+        padding: 0;
+    }
+}
