@@ -9,7 +9,7 @@ setInterval(displayTime, 1000);
 
 // Type write code
 
-const texts = ["teacher", "gym trainer", "web developer"];
+const texts = ["Full-stack developer", "web developer", "web designer"];
 
 const typewriter = document.getElementById("dev-name");
 let textIndex = 0;

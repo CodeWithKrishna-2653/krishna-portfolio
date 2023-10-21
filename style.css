@@ -6,6 +6,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
     font-family: "Bree Serif", serif;
 }
 
@@ -19,7 +21,7 @@ body {
 
 body::before {
     position: fixed;
-    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);   
+    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);
     bottom: 0px;
     content: "";
     width: 100%;
@@ -599,6 +601,7 @@ button2:hover {
         transform: translateX(-200px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -610,6 +613,7 @@ button2:hover {
         transform: translateY(200px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -621,6 +625,7 @@ button2:hover {
         transform: translateY(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -632,6 +637,7 @@ button2:hover {
         transform: translateX(-200px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -643,6 +649,7 @@ button2:hover {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -654,6 +661,7 @@ button2:hover {
         transform: translateX(200px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -665,6 +673,7 @@ button2:hover {
         transform: scale(0);
         opacity: 0;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
