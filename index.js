@@ -11,7 +11,7 @@ setInterval(displayTime, 1000);
 
 const texts = ["teacher", "gym trainer", "web developer"];
 
-const typewriter = document.getElementById("dev-id");
+const typewriter = document.getElementById("dev-name");
 let textIndex = 0;
 let charIndex = 0;
 
