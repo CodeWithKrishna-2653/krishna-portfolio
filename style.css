@@ -37,7 +37,7 @@ nav {
     left: 0;
     width: 100%;
     background: transparent;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: white;
     display: flex;
     position: fixed;
@@ -59,7 +59,7 @@ nav::before {
 }
 
 .logo li {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     font-family: "Ubuntu", sans-serif;
     cursor: default;
@@ -83,7 +83,7 @@ nav::before {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     opacity: 0;
     animation: menu 0.5s ease forwards;
@@ -102,7 +102,7 @@ nav::before {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #0ef;
     border-radius: 10px;
     transition: 0.4s;
@@ -312,7 +312,6 @@ nav::before {
 }
 
 .vid-list img {
-    width: 95%;
     border-radius: 20px;
     animation: zoomin 1s ease forwards;
     opacity: 0;
