@@ -90,8 +90,7 @@ nav::before {
 }
 
 .menu a:hover {
-    width: 100%;
-    box-shadow: 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 150px rgb(140, 247, 255);
+    box-shadow: 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 150px rgb(57, 240, 253);
 }
 
 .register a {
