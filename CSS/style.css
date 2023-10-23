@@ -86,12 +86,8 @@ nav::before {
     font-size: 20px;
     font-weight: 500;
     text-shadow: 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 150px rgb(140, 247, 255);
-    transition: 0.3s ease-in-out all;
 }
 
-.menu a:hover {
-    box-shadow: 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 15px rgb(57, 240, 253), 0 0 150px rgb(57, 240, 253);
-}
 
 .register a {
     text-decoration: none;
@@ -100,13 +96,8 @@ nav::before {
     font-size: 25px;
     background-color: #0ef;
     border-radius: 10px;
-    transition: ease all 0.4s;
     margin: 5px;
     box-shadow: 4px 4px black;
-}
-
-.register a:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
@@ -151,14 +142,9 @@ nav::before {
     padding: 10px 20px;
     background-color: #0ef;
     border-radius: 10px;
-    transition: ease all .4s;
     margin: 5px;
     font-size: 25px;
     box-shadow: 4px 4px black;
-}
-
-.register1 a:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
@@ -222,13 +208,6 @@ nav::before {
     color: #0ef;
     text-decoration: none;
     margin: 10px 15px 10px 0;
-    transition: 0.5s ease all;
-}
-
-.social-media a:hover {
-    background-color: #0ef;
-    color: #1f242d;
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 .button10 button {
@@ -241,13 +220,9 @@ nav::before {
     font-size: 25px;
     color: black;
     cursor: pointer;
-    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
 }
 
-.button10 button:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
-}
 
 
 /* service page */
@@ -301,12 +276,7 @@ nav::before {
     font-size: 25px;
     color: black;
     cursor: pointer;
-    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
-}
-
-.vid-list .visit-now:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
@@ -350,12 +320,6 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition:ease all 0.4s;
-}
-
-.contactform form div input:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
-    z-index: 10;
 }
 
 #emailHelp {
@@ -372,12 +336,7 @@ nav::before {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
-}
-
-.button6 button:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
@@ -416,12 +375,6 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition: ease all 0.4s;
-}
-
-.register2 form div input:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
-    z-index: 10;
 }
 
 .button5 button {
@@ -435,11 +388,6 @@ nav::before {
     color: black;
     font-size: 15px;
     cursor: pointer;
-    transition: ease all 0.4s;
-}
-
-.button5 button:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 .btn a {
@@ -463,11 +411,6 @@ nav::before {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    transition: ease all 0.4s;
-}
-
-.p .btn:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
@@ -505,13 +448,8 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition: ease all 0.4s;
 }
 
-.register5 form div input:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
-    z-index: 10;
-}
 
 button2 {
     border-radius: 10px;
@@ -522,11 +460,6 @@ button2 {
     padding: 9px 14px;
     font-size: 15px;
     cursor: pointer;
-    transition: ease all 0.4s;
-}
-
-button2:hover {
-    box-shadow: 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 15px #0ef, 0 0 150px #0ef;
 }
 
 
