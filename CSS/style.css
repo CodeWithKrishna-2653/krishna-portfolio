@@ -6,8 +6,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-transform: uppercase;
-    scroll-behavior: smooth;
     font-family: "Bree Serif", serif;
 }
 
@@ -21,7 +19,7 @@ body {
 
 body::before {
     position: fixed;
-    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);
+    background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);   
     bottom: 0px;
     content: "";
     width: 100%;
@@ -37,7 +35,7 @@ nav {
     left: 0;
     width: 100%;
     background: transparent;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: white;
     display: flex;
     position: fixed;
@@ -49,29 +47,31 @@ nav::before {
     background-image: linear-gradient(to bottom, #fc5c7d, #6a82fb);
     position: absolute;
     width: 100%;
-    opacity: 0.5;
     height: 140%;
     z-index: -1;
 }
 
-.logo a {
+.logo li a {
     text-decoration: none;
+    color: white;
 }
 
 .logo li {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     font-family: "Ubuntu", sans-serif;
     cursor: default;
     list-style: none;
     letter-spacing: 2px;
     color: white;
-    opacity: 0;
-    animation: logo 2s ease forwards;
     text-shadow: 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 15px #00475f;
 }
 
-.logo span {
+.logo li a samp{
+    color: white;
+}
+
+.logo li a span {
     color: white;
     position: relative;
     z-index: -1;
@@ -83,13 +83,10 @@ nav::before {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
-    opacity: 0;
-    animation: menu 0.5s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
     text-shadow: 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 15px rgb(140, 247, 255), 0 0 150px rgb(140, 247, 255);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out all;
 }
 
 .menu a:hover {
@@ -98,14 +95,13 @@ nav::before {
 }
 
 .register a {
-    animation: button 2s ease backwards;
     text-decoration: none;
     color: black;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #0ef;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: ease all 0.4s;
     margin: 5px;
     box-shadow: 4px 4px black;
 }
@@ -131,8 +127,6 @@ nav::before {
     border: none;
     font-size: 50px;
     text-shadow: 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 5px rgb(240, 131, 149), 0 0 15px rgb(240, 131, 149);
-    animation: hello 1s ease forwards;
-    opacity: 0;
 }
 
 .portfolio {
@@ -140,9 +134,6 @@ nav::before {
     margin-top: 10px;
     font-size: 60px;
     list-style: none;
-    animation: zoomin 1s ease forwards;
-    opacity: 0;
-    animation-delay: 1s;
     color: white;
     font-family: "Ubuntu", sans-serif;
     text-shadow: 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 5px #00475f, 0 0 15px #00475f;
@@ -161,13 +152,10 @@ nav::before {
     padding: 10px 20px;
     background-color: #0ef;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: ease all .4s;
     margin: 5px;
     font-size: 25px;
     box-shadow: 4px 4px black;
-    animation: menu2 1s ease forwards;
-    opacity: 0;
-    animation-delay: 2s;
 }
 
 .register1 a:hover {
@@ -195,17 +183,12 @@ nav::before {
     font-size: 60px;
     color: white;
     font-weight: 500;
-    animation: hello 1s ease forwards;
-    opacity: 0;
 }
 
 .name {
     font-size: 70px;
     font-weight: 500;
     color: white;
-    animation: logo 1s ease forwards;
-    opacity: 0;
-    animation-delay: 0.5s;
 }
 
 .about {
@@ -213,8 +196,6 @@ nav::before {
     font-weight: 500;
     color: white;
     font-weight: bolder;
-    animation: menu 1s ease forwards;
-    opacity: 0;
 }
 
 .about .multiple-text {
@@ -227,9 +208,6 @@ nav::before {
     margin-top: 9px;
     font-weight: 500;
     color: blanchedalmond;
-    animation: moreabout 1s ease forwards;
-    opacity: 0;
-    animation-delay: 0.5s;
 }
 
 .social-media a {
@@ -245,10 +223,7 @@ nav::before {
     color: #0ef;
     text-decoration: none;
     margin: 10px 15px 10px 0;
-    transition: 0.5s ease;
-    animation: moreabout 1s ease forwards;
-    opacity: 0;
-    animation-delay: calc(0.1s * var(--j));
+    transition: 0.5s ease all;
 }
 
 .social-media a:hover {
@@ -262,15 +237,12 @@ nav::before {
     padding: 9px 14px;
     border-radius: 10px;
     background-color: #0ef;
-    animation: menu2 1s ease forwards;
-    opacity: 0;
-    animation-delay: 1s;
     border: none;
     font-weight: bold;
     font-size: 25px;
     color: black;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
 }
 
@@ -313,16 +285,11 @@ nav::before {
 
 .vid-list img {
     border-radius: 20px;
-    animation: zoomin 1s ease forwards;
-    opacity: 0;
 }
 
 .vid-list .tittle {
     font-size: 20px;
     color: #0ef;
-    animation: logo 1s ease forwards;
-    opacity: 0;
-    animation-delay: 0.5s;
 }
 
 .vid-list .visit-now {
@@ -335,11 +302,8 @@ nav::before {
     font-size: 25px;
     color: black;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
-    animation: menu2 1s ease forwards;
-    opacity: 0;
-    animation-delay: 1s;
 }
 
 .vid-list .visit-now:hover {
@@ -387,7 +351,7 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition: 0.4s;
+    transition:ease all 0.4s;
 }
 
 .contactform form div input:hover {
@@ -409,7 +373,7 @@ nav::before {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
     box-shadow: 4px 4px black;
 }
 
@@ -453,7 +417,7 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition: 0.4s;
+    transition: ease all 0.4s;
 }
 
 .register2 form div input:hover {
@@ -472,7 +436,7 @@ nav::before {
     color: black;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
 }
 
 .button5 button:hover {
@@ -500,7 +464,7 @@ nav::before {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
 }
 
 .p .btn:hover {
@@ -542,7 +506,7 @@ nav::before {
     padding: 5px 17px;
     margin-top: 12px;
     font-size: 21px;
-    transition: 0.4s;
+    transition: ease all 0.4s;
 }
 
 .register5 form div input:hover {
@@ -559,7 +523,7 @@ button2 {
     padding: 9px 14px;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ease all 0.4s;
 }
 
 button2:hover {
@@ -573,7 +537,6 @@ button2:hover {
     height: 5vh;
     bottom: 0px;
     width: 100vw;
-    opacity: .7;
     position: fixed;
     color: white;
 }
@@ -590,91 +553,4 @@ button2:hover {
 
 #footer {
     font-size: 25px;
-}
-
-
-/* KEYFRAMES ANIMATION */
-
-@keyframes logo {
-    0% {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes menu {
-    0% {
-        transform: translateY(200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes menu2 {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes button {
-    0% {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes hello {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes moreabout {
-    0% {
-        transform: translateX(200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomin {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
