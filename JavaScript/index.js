@@ -11,7 +11,7 @@ setInterval(displayTime, 1000);
 
 const texts = ["Full-stack developer", "web developer", "web designer"];
 
-const typewriter = document.getElementById("dev-name");
+const typewriter = document.getElementsByClassName("multiple-text");
 let textIndex = 0;
 let charIndex = 0;
 
